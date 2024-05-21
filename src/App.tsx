@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {BrowserRouter as Router} from "react-router-dom";
 import "./App.css";
 import Remote from "./components/remote";
@@ -7,7 +6,6 @@ import { useControl } from "./hooks/useControl";
 import Television from "./components/tv";
 
 function App() {
-  const [loading, setLoading] = useState(false);
   const { channel } = useControl();
 
 
