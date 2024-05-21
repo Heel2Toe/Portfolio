@@ -9,12 +9,12 @@ body,
 
 @font-face {
   font-family: 'digital-font';
-  src: url('./fonts/digital-font.otf') format('opentype');
+  src: url('/fonts/digital-font.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'vice-city';
-  src: url('./fonts/vice-city.ttf') format('truetype');
+  src: url('/fonts/vice-city.ttf') format('truetype');
 }
 
 .blinking{
