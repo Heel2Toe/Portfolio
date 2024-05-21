@@ -1,0 +1,126 @@
+html,
+body,
+:root{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+}
+
+@font-face {
+  font-family: 'digital-font';
+  src: url('./fonts/digital-font.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'vice-city';
+  src: url('./fonts/vice-city.ttf') format('truetype');
+}
+
+.blinking{
+  animation: blinkingAnimation 1s infinite;
+}
+
+@keyframes blinkingAnimation {
+  0%{
+    color: rgba(255, 255, 255, 0.6);
+  }
+  50%{
+    color: transparent;
+  }
+  100%{
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+
+.digital-text{
+  font-family: 'digital-font', sans-serif;
+}
+
+.vc-text{
+  font-family: 'vice-city', sans-serif;
+}
+
+.font1{
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font2{
+  font-family: "Bungee Hairline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+}
+
+.glow-error {
+  box-shadow: 
+  0 0 5px rgba(255, 0, 0, 0.3),
+  0 0 10px rgba(255, 0, 0, 0.3),
+  0 0 15px rgba(255, 0, 0, 0.3),
+  0 0 20px rgba(255, 0, 0, 0.4),
+  0 0 35px rgba(255, 0, 0, 0.4),
+  0 0 40px rgba(255, 0, 0, 0.4);
+}
+
+.glow-ok {
+  box-shadow: 
+  0 0 5px rgba(0, 255, 0, 0.3),
+  0 0 10px rgba(0, 255, 0, 0.3),
+  0 0 15px rgba(0, 255, 0, 0.3),
+  0 0 20px rgba(0, 255, 0, 0.4),
+  0 0 35px rgba(0, 255, 0, 0.4),
+  0 0 40px rgba(0, 255, 0, 0.4);
+}
+
+
+.led-loading {
+  box-shadow: 
+      0 0 5px rgba(255, 165, 0, 0.3),
+      0 0 10px rgba(255, 165, 0, 0.3),
+      0 0 15px rgba(255, 165, 0, 0.3),
+      0 0 20px rgba(255, 165, 0, 0.4),
+      0 0 35px rgba(255, 165, 0, 0.4),
+      0 0 40px rgba(255, 165, 0, 0.4);
+}
+
+.glow-lcd {
+  box-shadow: 
+  0 0 5px rgba(31, 41, 55, 0.5),
+  0 0 10px rgba(31, 41, 55, 0.5),
+  0 0 15px rgba(31, 41, 55, 0.5),
+  0 0 20px rgba(31, 41, 55, 0.7),
+  0 0 35px rgba(31, 41, 55, 0.7),
+  0 0 40px rgba(31, 41, 55, 0.7);
+}
+
+.glow-white{
+  box-shadow: 
+  0 0 5px rgba(255, 255, 255, 0.5),
+  0 0 10px rgba(255, 255, 255, 0.5),
+  0 0 15px rgba(255, 255, 255, 0.5),
+  0 0 20px rgba(255, 255, 255, 0.7),
+  0 0 35px rgba(255, 255, 255, 0.7),
+  0 0 40px rgba(255, 255, 255, 0.7);
+}
+
+.tvStatic{
+  background-image: url('/images/static2.jpg');
+  pointer-events: none;
+
+  animation: grain 0.5s steps(10) infinite;
+}
+
+@keyframes grain {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 100%; 
+  }
+}
