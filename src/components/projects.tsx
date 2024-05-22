@@ -58,7 +58,7 @@ const Projects = () => {
   return (
     <>
       {!singleProject.name ? 
-        <div className="h-full w-full text-white/90 p-10 space-y-10 flex flex-col overflow-y-scroll hide-scrollbar">
+        <div className="h-full w-full bg-[#132413] text-white/90 p-10 space-y-10 flex flex-col overflow-y-scroll hide-scrollbar">
           <h1 className="text-7xl font1 self-start">PROJECTS</h1>
           {projects &&
             projects.map((project, index) => (

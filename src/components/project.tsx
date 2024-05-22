@@ -12,10 +12,10 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ chosen, exit }) => {
   return (
-    <div className="relative h-full w-full p-10 flex flex-col">
+    <div className="relative bg-[#132413] h-full w-full p-10 flex flex-col overflow-hidden">
       <button
         onClick={exit}
-        className="absolute top-1 right-1 p-2 px-6 font2 font-bold text-white border text-sm
+        className="absolute top-3 right-3 p-2 px-6 font2 font-bold text-white border text-sm
             hover:bg-white/90 hover:text-black duration-500"
       >
         back

@@ -13,7 +13,7 @@ const Education = () => {
   }, []);
 
   return (
-    <div className="h-full w-full p-10 text-white/90 flex flex-col space-y-10 hide-scrollbar overflow-y-scroll">
+    <div className="h-full w-full p-10 bg-green-900 text-white/90 flex flex-col space-y-10 hide-scrollbar overflow-y-scroll">
       <h1 className="text-8xl font1">Education</h1>
       <EducationCard
         institution="Techmindz"

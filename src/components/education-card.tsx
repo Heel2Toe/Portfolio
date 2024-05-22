@@ -15,7 +15,7 @@ const EducationCard: React.FC<EducationProps> = ({
     return ( 
         <div
         className="relative w-[90%] p-8 space-y-4 rounded-es-3xl border flex flex-col items-center">
-            <div className="absolute bg-[#0b150b] -top-1 -right-1 w-40 py-2 font2 flex justify-center">
+            <div className="absolute bg-green-900 text-white font2 font-extrabold -top-1 -right-1 w-40 py-2  flex justify-center">
               {duration}
             </div>
           <h1 
@@ -23,7 +23,7 @@ const EducationCard: React.FC<EducationProps> = ({
             {institution.toUpperCase()}
           </h1>
           <p>{description}</p>
-          {keyValue && <p className="self-end p-1 text-md border bg-white/80 text-black font-bold">
+          {keyValue && <p className="self-end p-1 text-md border bg-white/80 text-green-900 font-bold">
           {keyValue}
         </p>}
         </div>

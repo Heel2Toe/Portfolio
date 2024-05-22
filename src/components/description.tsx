@@ -15,7 +15,7 @@ const Desc = () => {
   }, []);
 
   return (
-    <div className=" h-full w-full p-10 myFont text-white/90 space-y-8  flex flex-col">
+    <div className=" h-full w-full bg-green-900 p-10 myFont text-white/90 space-y-8  flex flex-col">
       <div className="flex items-center text-8xl font1">
         <h1>HELLO</h1>
         <h1 className="p-1 border rounded-ee-full">IM NIRANJAN</h1>

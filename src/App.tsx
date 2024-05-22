@@ -8,8 +8,6 @@ import Television from "./components/tv";
 function App() {
   const { channel } = useControl();
 
-
-
   return (
     <div className="relative flex justify-between items-center p-4 bg-stone-950 h-full">
       <Toaster/>
