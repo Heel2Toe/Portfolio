@@ -5,7 +5,7 @@ import LoadingHeading from "./loading-heading";
 
 const MainLoading = () => {
     return ( 
-        <div className="h-full w-full p-10 bg-emerald-950 text-white/70 flex justify-center items-center">
+        <div className="h-full w-full p-10 z-40 bg-emerald-950 text-white/70 flex justify-center items-center">
             <div className="mb-20 flex flex-col justify-center items-center">
           <LoadingHeading/>
           <VaryText/>

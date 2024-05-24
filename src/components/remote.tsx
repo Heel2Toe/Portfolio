@@ -4,16 +4,16 @@ import Indicators from "./remote-components/indicators";
 import LCD from "./remote-components/lcd-display";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 
-const Remote = () => {
+const Remote = ({warmedUp}:{warmedUp: boolean}) => {
   const { channelUp, channelDown } = useControl();
   const { switchCounter } = useAdmin();
 
   return (
     <div className="relative w-[20%] h-full rounded-md bg-stone-900 border z-20 p-4 shadow-2xl space-y-10 flex flex-col">
-      <LCD counter={switchCounter} />
+      <LCD counter={switchCounter} warmedUp={warmedUp}/>
 
       <div className="w-full">
-        <Indicators />
+        <Indicators/>
       </div>
 
       <div className="w-full flex justify-center mt-10">

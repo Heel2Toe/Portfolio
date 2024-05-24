@@ -9,14 +9,14 @@ import {
 
 const channelNames = ["About Me", "My Education", "My Projects"];
 
-const LCD = ({ counter }: { counter: number }) => {
+const LCD = ({ counter, warmedUp }: { counter: number, warmedUp: boolean }) => {
   const { channel, error, loading } = useControl();
 
   return (
     <div
       className={classNames(
         `relative digital-text w-full h-32  flex items-center justify-center duration-300`,
-        counter == 5
+        counter == 5 || !warmedUp
           ? " bg-stone-800 text-transparent"
           : "glow-lcd text-white/60  bg-blue-600"
       )}
